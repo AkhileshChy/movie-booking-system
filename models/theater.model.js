@@ -27,11 +27,7 @@ const theaterSchema = new mongoose.Schema(
                             default: true
                         }
                     }
-                ],
-                isAvailable: {
-                    type: Boolean,
-                    default: true
-                }
+                ]
             }
         ],
         owner: {
