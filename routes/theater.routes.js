@@ -4,7 +4,7 @@ import authorize from '../middleware/rbac.middleware.js';
 
 const router = express.Router();
 
-router.get('/alltheaters', getAllTheaters);
+router.get('/alltheaters', authorize(['admin']), getAllTheaters);
 router.post('/create', authorize(['theaterOwner']), createTheater);
 router.delete('/delete/:id', authorize(['theaterOwner', 'admin']), deleteTheater);
 

@@ -19,7 +19,7 @@ const scheduleSchema = new mongoose.Schema(
         showtimes: [
             {
                 type: Date,
-                required: true
+                required: true,
             }
         ],
         seats: [

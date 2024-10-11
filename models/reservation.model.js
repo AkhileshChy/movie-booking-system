@@ -17,10 +17,6 @@ const reservationSchema = new mongoose.Schema(
                 seatNumber: {
                     type: String,
                     required: true
-                },
-                isAvailable: {
-                    type: Boolean,
-                    default: false
                 }
             }
         ],
